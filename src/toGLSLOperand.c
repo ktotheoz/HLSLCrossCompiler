@@ -13,6 +13,9 @@
 #endif
 
 #define fpcheck(x) (isnan(x) || isinf(x))
+#ifndef max
+#define max(a,b)            (((a) > (b)) ? (a) : (b))
+#endif
 
 extern void AddIndentation(HLSLCrossCompilerContext* psContext);
 
